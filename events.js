@@ -1,4 +1,4 @@
-﻿/* events.js
+/* events.js
    事件管理器：为项目提供可扩展的随机事件系统
    - Event structure: {id, name, check(ctx) => boolean, run(ctx) => void, description}
    - 使用 register/registerDefaultEvents/clear/checkRandomEvents
