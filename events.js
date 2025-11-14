@@ -541,8 +541,8 @@
           let provForName = c.game && c.game.province_name ? c.game.province_name : null;
           if (typeof provForName === 'number' && c.PROVINCES && c.PROVINCES[provForName]) provForName = c.PROVINCES[provForName].name;
           provForName = (provForName || '') + '';
-          const newStudentName = (typeof window.generateName === 'function') ? window.generateName({ region: provForName }) : '新学生';
           
+          const newStudentName = (typeof window.generateName === 'function') ? window.generateName({ region: provForName }) : '新学生';
           const options = [
             { label: '接收', effect: () => {
                 const cost = c.utils.uniformInt(10000, 20000);
